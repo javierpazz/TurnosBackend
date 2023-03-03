@@ -18,7 +18,8 @@ class Server {
     // Configuraciones de sockets
     this.io = socketio(this.server, {
       cors: {
-        origin: 'http://localhost:3000',
+        origin: 'turnos-front.vercel.app',
+        //        origin: 'http://localhost:3000',
         methods: ['GET', 'POST'],
         credentials: true,
       },
